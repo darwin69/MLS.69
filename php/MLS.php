@@ -236,18 +236,20 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2572.366040509431!2d5.265149699999999!3d49.8543684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ea80f736174767%3A0xabf81bb4e24568a4!2sBertrix!5e0!3m2!1sfr!2sbe!4v1666084542268!5m2!1sfr!2sbe" width="550" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
          </div>
 
-         <form action="" class="col-md-6">
+         <form action="" class="col-md-6" >
             <h3>Contactez-nous !</h3>
-            <input type="text" placeholder="Votre nom" class="box">
-            <input type="email" placeholder="Email" class="box">
+            <input type="text" placeholder="Votre nom" class="box" required>
+            <input type="email" placeholder="Email" name="email" class="box" required>
             <input type="number" placeholder="Téléphone" class="box">
-            <textarea name="" placeholder="Message" class="box" id="" cols="30" rows="10"></textarea>
+            <textarea name="" placeholder="Message" class="box" id="" cols="30" rows="10" name="message"></textarea>
             <input type="submit" value="Envoyer message" class="link-btn">
-                 <?php
-                     $retour = mail('neobody007@gmail.com', 'Envoi depuis la page Contact', $_POST['message'], 'From: email');
-                     if ($retour)
-                         echo '<p>Votre message a bien été envoyé.</p>';
-                 ?>
+            <?php
+               if (isset($_POST['message'])) {
+                   $retour = mail('neobody007@gmail.com', 'Envoi depuis la page Contact', $_POST['message'], 'From: http://localhost/MLS.69/php/MLS.php?' . "\r\n" . 'Reply-to: ' . $_POST['email']);
+                   if($retour)
+                       echo '<p>Votre message a bien été envoyé.</p>';
+               }
+            ?>
          </form>
 
       </div>
