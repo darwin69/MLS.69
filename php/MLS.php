@@ -8,6 +8,7 @@
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
    <link rel="stylesheet" href="../MLS.css">
    <link rel="icon" href="">
 
@@ -28,27 +29,19 @@
             <a href="#gallery">Nos formules</a>
             <a href="#reviews">Avis</a>
             <a href="#contact">Contact</a>
-            <a href="#blogs">Réseau social</a>
+            <a href="#footer container">Réseau social</a>
          </nav>
-
-         <div class="icons">
-            <button id="togg1"><i class="fas fa-bars"></i></button>
-         </div>
     </div>
+
          </div>
-
       </div>
-
    </div>
-
+   <div class="icons"><a href="login-mls.php"><i class='bx bx-user'></a></i></div>   
 </header>
 
 
 </div>
 
-    <div class="d1">
-
-    </div>
 
 <section class="home" id="home">
 
@@ -245,7 +238,7 @@
             <input type="submit" value="Envoyer message" class="link-btn">
             <?php
                if (isset($_POST['message'])) {
-                   $retour = mail('neobody007@gmail.com', 'Envoi depuis la page Contact', $_POST['message'], 'From: http://localhost/MLS.69/php/MLS.php?' . "\r\n" . 'Reply-to: ' . $_POST['email']);
+                   $retour = mail('neobody007@gmail.com', 'Envoi depuis la page Contact', $_POST['message'], 'From: ' . "\r\n" . 'Reply-to: ' . $_POST['email']);
                    if($retour)
                        echo '<p>Votre message a bien été envoyé.</p>';
                }
@@ -260,9 +253,9 @@
 
 <hr size="1px"></hr>
 
-<section class="footer container">
+<section class="footer container" id="footer container">
 
-   <a href="#" class="logo"> <i class="fas fa-mug-hot"></i> Mafia Life Style </a>
+   <a href="#" class="logo"> Mafia Life Style </a>
 
 
    <div class="share">
@@ -303,29 +296,6 @@ window.onscroll = () =>{
       document.querySelector('.header').classList.remove('active');
    }
 }
-</script>
-
-<script>
-   let togg1 = document.getElementById("togg1");
-let togg2 = document.getElementById("togg2");
-let d1 = document.getElementById("d1");
-let  = document.getElementById("d2");
-togg1.addEventListener("click", () => {
-  if(getComputedStyle(d1).display != "none"){
-    d1.style.display = "none";
-  } else {
-    d1.style.display = "block";
-  }
-})
-
-function togg(){
-  if(getComputedStyle(d2).display != "none"){
-    d2.style.display = "none";
-  } else {
-    d2.style.display = "block";
-  }
-};
-togg2.onclick = togg;
 </script>
 
 </body>
