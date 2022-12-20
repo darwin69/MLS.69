@@ -92,7 +92,7 @@
          <div class="content">
             <h3>Mariage</h3>
             <p>Transformez votre mariage en mariage mafieux ! Voitures de luxes seront au rendez-vous !</p>
-            <a href="#" class="link-btn">Découvrir</a>
+            <a href="../mariage.html" class="link-btn">Découvrir</a>
          </div>
       </div>
 
@@ -101,7 +101,7 @@
          <div class="content">
             <h3>Braquage</h3>
             <p>Faite, seul ou avec des amis, le plus ingénieux casse de banque du monde mafieux !</p>
-            <a href="#" class="link-btn">Découvrir</a>
+            <a href="../braquage.html" class="link-btn">Découvrir</a>
          </div>
       </div>
 
@@ -110,7 +110,7 @@
          <div class="content">
             <h3>Laboratoire</h3>
             <p>Toujours eu envie d'entrer dans la peau d'un cuisto de drogue ? C'est possible !</p>
-            <a href="#" class="link-btn">Découvrir</a>
+            <a href="../laboratoire.html" class="link-btn">Découvrir</a>
          </div>
       </div>
       <br>
@@ -120,7 +120,7 @@
          <div class="content">
             <h3>Chasse à l'homme</h3>
             <p>Grâce aux indices laissés, essayez de retrouver la taupe dans votre organisation et le corriger !</p>
-            <a href="#" class="link-btn">Découvrir</a>
+            <a href="../chasse.html" class="link-btn">Découvrir</a>
          </div>
       </div>
 
@@ -129,7 +129,7 @@
          <div class="content">
             <h3>Sortie de prison</h3>
             <p>Evadez-vous de la prison où vous venez d'être incarcéré pour continuer vos activités illégal !</p>
-            <a href="#" class="link-btn">Découvrir</a>
+            <a href="../sortie.html" class="link-btn">Découvrir</a>
          </div>
       </div>
 
@@ -138,7 +138,7 @@
          <div class="content">
             <h3>Possession des cartiers</h3>
             <p>Trouvez les personnes et indices pour avoir la clé du pouvoir !</p>
-            <a href="#" class="link-btn">Découvrir</a>
+            <a href="../possession.html" class="link-btn">Découvrir</a>
          </div>
       </div>
 
