@@ -8,7 +8,7 @@
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
-   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
    <link rel="stylesheet" href="../MLS.css">
    <link rel="icon" href="">
 
@@ -36,7 +36,7 @@
          </div>
       </div>
    </div>
-   <div class="icons"><a href="login-mls.php"><i class='bx bx-user'></a></i></div>   
+   <div class="icons" style="float:right; margin-top:-25px; margin-right:175px;"><a href="login-mls.php"><i class='bx bx-user' style="width:200px;color:white;"></a></i></div>   
 </header>
 
 
