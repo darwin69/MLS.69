@@ -31,6 +31,9 @@
             <a href="#contact">Contact</a>
             <a href="#footer container">Réseau social</a>
          </nav>
+          <div class="icons">
+            <a href="php/login-mls.php"><i class="fa-light fa-user"></i></a>
+            </div>
     </div>
 
          </div>

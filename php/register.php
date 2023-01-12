@@ -60,7 +60,6 @@ if(isset($_POST['submit'])){
             <input type="email" name="email" placeholder="Entrez votre email" class="box" required>
             <input type="password" name="password" placeholder="Entrez votre mot de passe" class="box" required min="6" maxlength="20">
             <input type="password" name="cpassword" placeholder="Confirmez votre mot de passe" class="box" required>
-            <input type="file" name="image" class="box" accept="image/jpg , image/jpeg , image/png">
             <input type="submit" name="submit" value="Créez votre compte !" class="btn">
             <p>Vous avez un compte ?<a href="login.php">Connectez-vous !</a></p>
         </form>
