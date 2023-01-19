@@ -31,9 +31,6 @@
             <a href="#contact">Contact</a>
             <a href="#footer container">Réseau social</a>
          </nav>
-          <div class="icons">
-            <a href="php/login-mls.php"><i class="fa-light fa-user"></i></a>
-            </div>
     </div>
 
          </div>
@@ -54,7 +51,6 @@
          <div class="col-md-6">
             <span>Mafia Life Style</span>
             <h3>Prêt à être un criminel pour un jour ?</h3>
-            <a href="#" class="link-btn">Découvrir</a>
          </div>
       </div>
 

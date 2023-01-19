@@ -136,7 +136,7 @@ if(isset($_POST['submit'])){
 .form-container form .box{
     width: 100%;
     border-radius: 5px;
-    padding: 12px 14px;
+    padding: 12px 1px;
     font-size: 18px;
     color: var(--black);
     margin: 10px 0;
