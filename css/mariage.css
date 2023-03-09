@@ -125,7 +125,82 @@ body{
 
   #mariage{
     color: white;
-    font-size: 20px;
-    
-    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+   font-family: 'Montserrat', sans-serif;
+   text-align: center;
+  }
+
+  #mariage1{
+    color: yellow;
+    font-size: 25px;
+   font-family: 'Montserrat', sans-serif;
+   border: 2px solid yellow; 
+   padding: 5px;
+   display: inline-block;
+  }
+
+  #mariage2{
+    color: white;
+    font-size: 25px;
+   font-family: 'Montserrat', sans-serif;
+  }
+
+  #mariage3{
+    color: yellow;
+    font-size: 25px;
+   font-family: 'Montserrat', sans-serif;
+   border: 2px solid yellow; 
+   padding: 5px; 
+   display: inline-block;
+  }
+
+  #mariage4{
+    color: white;
+    font-size: 25px;
+   font-family: 'Montserrat', sans-serif;
+  }
+
+  #mariage5{
+    color: yellow;
+    font-size: 25px;
+   font-family: 'Montserrat', sans-serif;
+   border: 2px solid yellow; 
+   padding: 5px; 
+   display: inline-block;
+  }
+
+  #mariage6{
+    color: white;
+    font-size: 25px;
+   font-family: 'Montserrat', sans-serif;
+  }
+
+  #mariage7{
+    color: yellow;
+    font-size: 25px;
+   font-family: 'Montserrat', sans-serif;
+   border: 2px solid yellow; 
+   padding: 5px; 
+   display: inline-block;
+  }
+
+  #mariage8{
+    color: white;
+    font-size: 25px;
+   font-family: 'Montserrat', sans-serif;
+  }
+
+  #mariage9{
+    color: yellow;
+    font-size: 25px;
+   font-family: 'Montserrat', sans-serif;
+   border: 2px solid yellow; 
+   padding: 5px; 
+   display: inline-block;
+  }
+
+  #mariage10{
+    color: white;
+    font-size: 25px;
+   font-family: 'Montserrat', sans-serif;
   }
