@@ -7,13 +7,13 @@ if(isset($_POST['submit'])){
     $email = ($_POST['email']);
     $pass = md5($_POST['password']);
     // $pass = mysqli_real_escape_string($conn , md5($_POST['password']));
-    $select = mysqli_query($conn , "SELECT * FROM `info_utilisateur` WHERE email='$email' AND password = '$pass'") or die ('query failed');
+    $select = mysqli_query($conn , "SELECT * FROM `infos_users` WHERE email='$email' AND password = '$pass'") or die ('query failed');
 
     if(mysqli_num_rows($select) > 0){
         $message[] = 'Ce nom est déjà pris.';
         $row = mysqli_fetch_assoc($select);
         $_SESSION['user_id'] = $row ['id'];
-        header('location:home.php');
+        header('location:MLS.php');
     }else{
         $message[] = 'le mot de passe ou le nom d`utilisateur est incorrect !';
     }

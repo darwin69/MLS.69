@@ -6,12 +6,8 @@ if(isset($_POST['submit'])){
     $email = mysqli_real_escape_string($conn , $_POST['email']);
     $pass = mysqli_real_escape_string($conn , md5($_POST['password']));
     $cpass = mysqli_real_escape_string($conn , md5($_POST['cpassword']));
-    $image = $_FILES['image'];
-    $image_size = $_FILES['image']['size'];
-    $image_tmp_name = $_FILES['image']['tmp_name'];
-    $image_folder ='uploaded_img/'.$image;
 
-    $select = mysqli_query($conn , "SELECT * FROM `info_utilisateur` WHERE email = '$email' AND password = '$pass'")
+    $select = mysqli_query($conn , "SELECT * FROM `infos_users` WHERE email = '$email'")
     or die ('query failed');
 
     if(mysqli_num_rows($select) > 0){
@@ -19,16 +15,14 @@ if(isset($_POST['submit'])){
     }else{
         if($pass != $cpass){
             $message[] = 'La confirmation de votre mot de passe a échoué !';
-        }elseif($image_size > 2000000){
-            $message[] = 'Votre image est trop grande.';
         }else{
-            $insert = mysqli_query($conn , "INSERT INTO `info_utilisateur`(name, email, password, 
-            image) VALUES ('$name' ,'$email', '$pass', '$image')") or die('query failed');
+            $insert = mysqli_query($conn , "INSERT INTO `infos_users`(name, email, password)
+             VALUES ('$name' ,'$email', '$pass')") or die('query failed');
 
             if($insert){
                 move_uploaded_file($image_tmp_name, $image_folder);
                 $message[] = 'Votre compte à été créer avec succès !';
-                header('location:login.php');
+                header('location:login-mls.php');
             }else{
                 $message[] = 'La création de votre compte a échoué.';
             }
@@ -61,7 +55,7 @@ if(isset($_POST['submit'])){
             <input type="password" name="password" placeholder="Entrez votre mot de passe" class="box" required min="6" maxlength="20">
             <input type="password" name="cpassword" placeholder="Confirmez votre mot de passe" class="box" required>
             <input type="submit" name="submit" value="Créez votre compte !" class="btn">
-            <p>Vous avez un compte ?<a href="login.php">Connectez-vous !</a></p>
+            <p>Vous avez un compte ?<a href="login-mls.php">Connectez-vous !</a></p>
         </form>
     </div>
     <style>
